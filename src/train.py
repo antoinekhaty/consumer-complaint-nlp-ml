@@ -44,12 +44,12 @@ def clean_text(value: str) -> str:
 def make_demo_frame() -> pd.DataFrame:
     """Produce a small, fabricated dataset; no real complaint records."""
     templates = [
-        ("Closed with explanation", "The bank explained the account fee and statement", "Checking", "Fees"),
-        ("Closed with monetary relief", "A credit card refund was issued after a billing error", "Credit card", "Billing"),
-        ("Closed with non-monetary relief", "The credit report entry was corrected after review", "Credit reporting", "Report accuracy"),
-        ("In progress", "The complaint is pending investigation and awaiting review", "Student loan", "Servicing"),
-        ("Untimely response", "Response delayed and company missed the follow up deadline", "Mortgage", "Response delay"),
-        ("Closed", "The customer case was closed and resolved administratively", "Vehicle loan", "Administration"),
+        ("Closed with explanation", "My checking account has a fee I cannot explain", "Checking", "Fees"),
+        ("Closed with monetary relief", "My credit card statement has an incorrect charge", "Credit card", "Billing"),
+        ("Closed with non-monetary relief", "An unfamiliar account appears on my credit report", "Credit reporting", "Report accuracy"),
+        ("In progress", "I need help understanding my student loan repayment schedule", "Student loan", "Servicing"),
+        ("Untimely response", "I have not heard back about my mortgage billing question", "Mortgage", "Response delay"),
+        ("Closed", "My vehicle loan payment amount looks incorrect", "Vehicle loan", "Administration"),
     ]
     records = []
     for response, narrative, product, issue in templates:
